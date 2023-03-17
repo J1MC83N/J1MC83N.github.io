@@ -4,63 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-   <link rel="stylesheet" href="/libs/highlight/styles/github.min.css">
-   
+  
   <link rel="stylesheet" href="/css/franklin.css">
-  <link rel="stylesheet" href="/css/basic.css">
-  <link rel="icon" href="/assets/favicon.png">
-   <title>Test page</title>  
+<link rel="stylesheet" href="/css/hypertext.css">
+<link rel="icon" href="/assets/favicon.png">
+
+   <title>Franklin Example</title>  
 </head>
 <body>
-  <header>
-<div class="blog-name"><a href="/">Basic Template</a></div>
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/menu1/">Code blocks</a></li>
-    <li><a href="/menu2/">More goodies</a></li>
-    <li><a href="/menu3/">Tags</a></li>
-  </ul>
-  <img src="/assets/hamburger.svg" id="menu-icon">
-</nav>
+<header>
+  <h1><a href="/">Jimmy Chen</a></h1>
+  <nav>
+    <a href="/" class="current">Home</a>
+  | <a href="/menu1/">Coding Projects</a>
+  | <a href="/menu2/">Other Stuff</a>
+  <!-- | <a href="/menu3/">Tags</a> <hr/> -->
+  </nav>
 </header>
 
 
 <!-- Content appended here -->
-<div class="franklin-content"><h1 id="h1_title"><a href="#h1_title" class="header-anchor">h1 Title</a></h1>
-<pre><code class="language-julia">using InteractiveUtils, Interact, Mux, Pkg, Cairo, Images
-strstatus&#40;&#41; &#61; &#40;io &#61; IOBuffer&#40;&#41;; Pkg.status&#40;;io&#41;; String&#40;take&#33;&#40;io&#41;&#41;&#41;
-strversioninfo&#40;;verbose::Bool&#61;false&#41; &#61; &#40;io &#61; IOBuffer&#40;&#41;; versioninfo&#40;io;verbose&#41;; String&#40;take&#33;&#40;io&#41;&#41;&#41;
-function app&#40;req&#41;
-    ctx &#61; CairoContext&#40;CairoRGBSurface&#40;100,100&#41;&#41;
-    set_source_rgb&#40;ctx,1,1,1&#41;
-    @manipulate for ω &#61; 0:0.1:5
-        r &#61; 0:0.1:5
-        circle&#40;ctx,100rand&#40;&#41;,100rand&#40;&#41;,5&#41;
-        fill&#40;ctx&#41;
-        vbox&#40;
-            vskip&#40;1em&#41;,
-            md&quot;&#36;&#40;strversioninfo&#40;&#41;&#41;&quot;,
-            vskip&#40;1em&#41;,
-            # plot&#40;r,sin.&#40;ω.*r&#41;&#41;,
-            Gray&#123;Float32&#125;.&#40;rand&#40;Float32,5,5&#41;&#41;,
-            vskip&#40;1em&#41;,
-            ctx.surface
-            &#41;
-    end
-end</code></pre>
-<h2 id="iframe_test"><a href="#iframe_test" class="header-anchor">iframe test</a></h2>
-<iframe src="https://j1mc83n-test-app.herokuapp.com" width="860px" height="520px"></iframe>
+<div class="franklin-content"><h1 id="in_short"><a href="#in_short" class="header-anchor">In short ...</a></h1>
+<p>Frequently I: </p>
+<p>Sometimes I: </p>
+<p>Currently I:</p>
+<p>Always I: </p>
 <div class="page-foot">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Septimia Zenobia. Last modified: March 16, 2023.
+    &copy Jimmy Chen. Last modified: March 17, 2023.
     Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div><!-- CONTENT ENDS HERE -->
     
-    
-        <script src="/libs/highlight/highlight.min.js"></script>
-<script>hljs.highlightAll();hljs.configure({tabReplace: '    '});</script>
-
     
   </body>
 </html>
