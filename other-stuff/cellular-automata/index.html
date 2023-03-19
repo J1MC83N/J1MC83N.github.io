@@ -35,9 +35,8 @@
 <!-- Content appended here -->
 <div class="franklin-content">
 <h1 id="title"><a href="#title" class="header-anchor">Cellular Automata</a></h1>
-<p>It is hard to describe what an cellular automaton really is; I have learned this fact through my many &#40;failed&#41; attempts at explaining what these dots on my screen represent to a friend. Maybe I should start with the most well known example: <a href="https://mathworld.wolfram.com/GameofLife.html">Conway&#39;s Game of Life</a> &#40;CGoL&#41;. </p>
+<p>It is hard to describe what a cellular automaton really is; I have learned this fact through my many &#40;failed&#41; attempts at explaining what these dots on my screen represent to a friend. Maybe I should start with the most well-known example: <a href="https://mathworld.wolfram.com/GameofLife.html">Conway&#39;s Game of Life</a> &#40;CGoL&#41;. </p>
 <p>In the Game of Life, cells lie on a square grid, each with a binary state: <em>on</em> or <em>off</em>. At each discrete time step, each cell updates its state according the count of <em>on</em> states in a neighborhood of cells, and all cells update at the same time according to the previous &quot;snapshot&quot; of the grid. </p>
-<p>Some obvious extensions of CGoL has been explored: the grid can be in arbitrary dimensions and arbitrarily tessellated; the cell can have multiple possible states or even continous values; a cell&#39;s update rules can depend on the actual arrangement of its neighbors&#39; states, not just the count; and cells can be updated in some order. </p>
 <p>Run a given initial configuration for enough iterations &#40;or <em>generations</em>&#41; and stuff appears: patterns that stay invariant every generation &#40;<a href="https://conwaylife.com/wiki/Still_life"><em>still lifes</em></a>&#41;; patterns that repeats after a number of generations &#40;<a href="https://conwaylife.com/wiki/Oscillator"><em>oscillators</em></a>&#41;; patterns that move to a different location after some generations &#40;<a href="https://conwaylife.com/wiki/Spaceship"><em>spaceships</em></a>&#41;; patterns whose number of <em>on</em> cells &#40;<em>population</em>&#41; grows <a href="https://conwaylife.com/wiki/Linear_growth">linearly</a>, <a href="https://conwaylife.com/wiki/Quadratic_growth">quadratically</a> or <a href="https://conwaylife.com/wiki/Logarithmic_growth">logarithmically</a>; and <a href="https://conwaylife.com/wiki/Category:Patterns">many more</a>. </p>
 <p>Cellular automata &#40;and CGoL itself&#41; have been used to do many things: simulating biological systems and physical systems &#40;e.g. <a href="https://en.wikipedia.org/wiki/Lattice_gas_automaton">gas models</a>&#41;; calculating primes &#40;<a href="https://conwaylife.com/forums/viewtopic.php?f&#61;11&amp;t&#61;3233&amp;p&#61;55338&amp;hilit&#61;prime#p55338">one early design by me</a> and <a href="https://conwaylife.com/wiki/Primer">a much better design</a>&#41;; simulating other cellular automata &#40;see <a href="https://conwaylife.com/wiki/Unit_cell">metacell</a>&#41;; etc. &#40;No wonder Wikipedia calls it a &quot;<a href="https://en.wikipedia.org/wiki/Cellular_automaton#:~:text&#61;is&#37;20a&#37;20discrete-,model&#37;20of&#37;20computation,-studied&#37;20in&#37;20automata">model of computation</a>&#33;&quot;&#41;</p>
 <p>Particularly notable discoveries by me:</p>
@@ -138,7 +137,7 @@ b2o&#36;60bobo&#36;59bobo&#36;59b2obo4&#36;68bo3bo&#36;67bobobobo&#36;66bob2obob
 67b2ob2o&#36;66bo&#36;67b2o&#33;</code></pre>
 <p><img src="/assets/CA/zoom.gif" style="max-width:70%;"> <br/> <img src="/assets/CA/zoom.png" style="max-width:70%;"></p>
 <div class="page-foot">
-    &copy Jimmy Chen. Last modified: March 18, 2023.
+    &copy Jimmy Chen. Last modified: March 19, 2023.
     Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div><!-- CONTENT ENDS HERE -->

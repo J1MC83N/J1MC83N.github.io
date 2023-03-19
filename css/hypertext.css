@@ -40,3 +40,9 @@ code.language-plaintext.hljs {
   border-radius: 2px;
   font-size: var(--smaller);
 }
+
+.hanging {
+  --hang: 72px;
+  padding-left: var(--hang);
+  text-indent: -var(--hang);
+}
