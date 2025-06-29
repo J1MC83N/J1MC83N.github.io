@@ -45,11 +45,11 @@
 </ol>
 <p>After experimentation with just the first two rules, I found that the images tend to get universally blurry. The resulting texture has some desirable qualities, but we also lose most details on the original image. In response, I added a third rule: </p>
 <ol start="3">
-<li><p>Pixels located at the edges of the image should change color less frequently, to preserve these edges to a degree. This is where the <em>flux</em> value comes in: each pixel position has a flux value that is essentially the average color contrast of the input image at that position, a representation of how &quot;edgy&quot; the image is here. Note that the flux values are computed based on the input image only and remain constant throughout the iterations. </p>
+<li><p>Pixels around perceptual edges of the image should change color less frequently, to preserve these edges to a degree. This is where the <em>flux</em> value comes in: each pixel position has a flux value that is essentially the average color contrast of the input image at that position, a representation of how &quot;edgy&quot; the image is here. Note that the flux values are computed based on the input image only and remain constant throughout the iterations. </p>
 </li>
 </ol>
 <p>There are also <a href="https://conwaylife.com/wiki/Neighbourhood">multiple nontrivial ways</a> to define a pixel&#39;s neighbors. Here we use the Moore neighborhood, which consists of the 4 adjacent and 4 diagonal cells. I&#39;ve experimented with larger neighborhoods which include more and further away pixels, but those are more computationally expensive to run and the results are visually similar. </p>
-<p>All base images are by me. </p>
+<p>All base images are photographed by me. </p>
 <p><div class="container"><center><a href="/assets/dithering/lamp.png"> <img src="/assets/dithering/lamp-thumbnail.png" style="max-width:80%; cursor:pointer;" title="Click to see original"> </a></div> <br/></p>
 <p><div class="container"><center><a href="/assets/dithering/shore1.png"> <img src="/assets/dithering/shore1-thumbnail.png" style="max-width:100%; cursor:pointer;" title="Click to see original"> </a></div> <br/></p>
 <p><div class="container"><center><a href="/assets/dithering/shore2.png"> <img src="/assets/dithering/shore2-thumbnail.png" style="max-width:100%; cursor:pointer;" title="Click to see original"> </a></div> <br/></p>
@@ -73,9 +73,9 @@
 
 <center> <iframe src="https://www.desmos.com/calculator/s6qqz6rg40?embed" width="700" height="500" style="border: 1px solid #ccc" frameborder=0></iframe></center>
 
-<p>It turns out that I&#39;m not the first to discover this curve. AFAIK the only other mention of it is this <a href="https://medium.com/@mcreynolds02/a-new-family-of-easing-functions-391821670a60">Medium article</a>, also introducing the curve&#39;s discovery. Notably, the article starts from desired properties and actually derives the curve&#39;s formula by solving differential equations. Given that it is such an informative article, I recommand you to read it so that I won&#39;t have to restate what&#39;s already been stated.</p>
+<p>It turns out that I&#39;m not the first to discover this curve. AFAIK the only other mention of it is this <a href="https://medium.com/@mcreynolds02/a-new-family-of-easing-functions-391821670a60">Medium article</a>, also introducing the curve&#39;s discovery. Notably, the article starts from desired properties and actually derives the curve&#39;s formula by solving differential equations. Given that it is such an informative article, I recommand checking it out for further information.</p>
 <div class="page-foot">
-    &copy Jimmy Chen. Last modified: February 26, 2024.
+    &copy Jimmy Chen. Last modified: September 06, 2024.
     Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div><!-- CONTENT ENDS HERE -->
