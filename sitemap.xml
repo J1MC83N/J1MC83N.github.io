@@ -8,14 +8,14 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://J1MC83N.github.io/stuff/cellular-automata/index.html</loc>
-    <lastmod>2023-03-19</lastmod>
+    <loc>https://J1MC83N.github.io/index.html</loc>
+    <lastmod>2025-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://J1MC83N.github.io/projects/index.html</loc>
-    <lastmod>2025-06-29</lastmod>
+    <lastmod>2025-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -26,8 +26,8 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://J1MC83N.github.io/index.html</loc>
-    <lastmod>2025-06-29</lastmod>
+    <loc>https://J1MC83N.github.io/stuff/cellular-automata/index.html</loc>
+    <lastmod>2023-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -38,20 +38,14 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://J1MC83N.github.io/menu3/index.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <loc>https://J1MC83N.github.io/projects/line-cut-3d/index.html</loc>
+    <lastmod>2023-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://J1MC83N.github.io/stuff/index.html</loc>
     <lastmod>2024-02-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://J1MC83N.github.io/projects/line-cut-3d/index.html</loc>
-    <lastmod>2023-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
