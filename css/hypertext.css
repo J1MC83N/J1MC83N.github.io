@@ -1,0 +1,92 @@
+/* Simple css to follow the geometry of franklin-content (see franklin.css) */
+
+header {
+  margin-top: 75px;
+  position: relative;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  margin-bottom: 50px;
+}
+
+/* on wide screens, fix content width to a max value */
+@media (min-width: 940px) {
+  header {
+    width: 705px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* on narrow device, reduce margins */
+@media (max-width: 480px) {
+  header {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+code.language-plaintext.hljs {
+  background-color: rgba(27,31,35,0.05);
+  /* background-color: var(--block-background); */
+  padding: 0.1em 0.2em;
+  border-radius: 2px;
+  font-size: var(--smaller);
+}
+
+.hanging {
+  --hang: 72px;
+  padding-left: var(--hang);
+  text-indent: -var(--hang);
+}
+
+.imgrow {
+  /* display: flex; */
+  /* content: "";
+  clear: both;
+  display: table; */
+  
+  /* display: table; */
+  /* display:block; */
+  /* align-items: center; */
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 2%; */
+}
+
+.imgcol {
+  
+  aspect-ratio: 1/ 1;
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+  padding: 2%;
+  /* background-color: #1E1E1E;
+  color: #fff; */
+
+}
+
+.imgcol a img {
+  max-width: 100%;
+  max-height: 100%;
+  object-position: center;
+  object-fit: contain;
+  position: relative;
+  margin-top:50%;
+  transform:translateY(-50%);
+}
+
+.imgcol a {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  
+}

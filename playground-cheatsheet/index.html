@@ -1,75 +1,35 @@
 <!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
-  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="LifeViewer" content="viewer textarea"> <!--required tag-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/libs/lv-plugin.js"></script>
+  <style>
+    .lv-rle{
+      position:absolute;
+      top:-1000px;
+    }
+  </style>
    <link rel="stylesheet" href="/libs/katex/katex.min.css">
      
   
   <link rel="stylesheet" href="/css/franklin.css">
-<link rel="stylesheet" href="/css/minimal-mistakes.css">
-<link rel="stylesheet" href="/css/adjust.css">
+<link rel="stylesheet" href="/css/hypertext.css">
 <link rel="icon" href="/assets/favicon.png">
-<!--[if IE ]>
-<style>
-  /* old IE unsupported flexbox fixes */
-  .greedy-nav .site-title {
-    padding-right: 3em;
-  }
-  .greedy-nav button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-  }
-</style>
-<![endif]-->
 
    <title>Playground-cheatsheet</title>  
-  <style>
-    @media (min-width: 1024px) {
-      .franklin-content {
-        width: 75%;
-        
-        padding-left: 8%;
-        padding-right: 8%;
-        
-      }
-    }
-  </style>
-  <!-- end custom head snippets -->
 </head>
-<body class="layout--single">
-  <div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">Jimmy Chen</a>
-        <ul class="visible-links">
-          <li class="masthead__menu-item"><a href="/projects/" >Code Projects</a></li>
-          <li class="masthead__menu-item"><a href="/stuff/" >Other Stuff</a></li>
-          <!-- <li class="masthead__menu-item"><a href="/menu2/" >More Goodies</a></li> -->
-          <!-- <li class="masthead__menu-item"><a href="/menu3/">Tags</a></li> -->
-        </ul>
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
-  </div>
-</div>
-
-  <div class="initial-content">
-    <div id="main" role="main">
-       
+<body>
+<header>
+  <h1><a href="/">Jimmy Chen</a></h1>
+  <nav>
+    <a href="/" class="current">Home</a>
+  | <a href="/projects/">Coding Projects</a>
+  | <a href="/stuff/">Other Stuff</a>
+  <!-- | <a href="/menu3/">Tags</a> <hr/> -->
+  </nav>
+</header>
 
 
 <!-- Content appended here -->
@@ -83,36 +43,10 @@
 \end{matrix}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:8.9836em;vertical-align:-4.2418em;"></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.7418em;"><span style="top:-6.8718em;"><span class="pstrut" style="height:3.762em;"></span><span class="mord"><span class="mop sizing reset-size6 size7"><span class="mop op-symbol large-op" style="margin-right:0.44445em;position:relative;top:-0.0011em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.454em;"><span style="top:-1.8904em;margin-left:-0.4445em;margin-right:0.0417em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mathcal mtight">M</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9096em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord sizing reset-size6 size7">∥∇</span><span class="mord mathnormal sizing reset-size6 size7" style="margin-right:0.10764em;">f</span><span class="mopen sizing reset-size6 size7">(</span><span class="mord mathnormal sizing reset-size6 size7">x</span><span class="mclose sizing reset-size6 size7">)</span><span class="mord sizing reset-size6 size7"><span class="mord">∥</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8426em;"><span style="top:-3.213em;margin-right:0.0417em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-4.0183em;"><span class="pstrut" style="height:3.762em;"></span><span class="mord"><span class="mrel"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.762em;"><span style="top:-2.566em;"><span class="pstrut" style="height:3.816em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.164em;"><span class="pstrut" style="height:3.816em;"></span><span style="height:1.816em;width:0.3333em;"><svg xmlns="http://www.w3.org/2000/svg" width='0.3333em' height='1.816em' style='width:0.3333em' viewBox='0 0 333.33000000000004 1816' preserveAspectRatio='xMinYMin'><path d='M145 0 H188 V1816 H145z M145 0 H188 V1816 H145z'/></svg></span></span><span style="top:-4.972em;"><span class="pstrut" style="height:3.816em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.25em;"><span></span></span></span></span></span></span></span></span><span style="top:-1.1826em;"><span class="pstrut" style="height:3.762em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="mopen nulldelimiter sizing reset-size7 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.514em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.43em;"><span class="pstrut" style="height:3.2em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.877em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size7 size6"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-2.0443em;margin-left:0em;"><span class="pstrut" style="height:3.2em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">∼</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.3853em;"><span></span></span></span></span></span><span class="mopen sizing reset-size6 size7">(</span><span class="mord sizing reset-size6 size7"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2897em;"><span style="top:-2.65em;margin-left:-0.1076em;margin-right:0.0417em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin sizing reset-size6 size7">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord sizing reset-size6 size7"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2897em;"><span style="top:-2.65em;margin-left:-0.1076em;margin-right:0.0417em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2796em;"><span></span></span></span></span></span></span><span class="mclose sizing reset-size6 size7"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8426em;"><span style="top:-3.213em;margin-right:0.0417em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord sizing reset-size6 size7"><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2897em;"><span style="top:-2.65em;margin-left:-0.1389em;margin-right:0.0417em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2796em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:4.2418em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.7418em;"><span style="top:-6.8718em;"><span class="pstrut" style="height:3.762em;"></span><span class="mord"><span class="mord rule" style="border-right-width:7em;border-top-width:0.02em;bottom:0.4em;"></span></span></span><span style="top:-4.0183em;"><span class="pstrut" style="height:3.762em;"></span><span class="mord"></span></span><span style="top:-1.1826em;"><span class="pstrut" style="height:3.762em;"></span><span class="mord"><span class="mord rule" style="border-right-width:7em;border-top-width:0.02em;bottom:0.4em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:4.2418em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.7418em;"><span style="top:-6.8718em;"><span class="pstrut" style="height:3.762em;"></span><span class="mord"><span class="mop sizing reset-size6 size7"><span class="mop op-symbol large-op" style="margin-right:0.44445em;position:relative;top:-0.0011em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.454em;"><span style="top:-1.8904em;margin-left:-0.4445em;margin-right:0.0417em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mathcal mtight">M</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9096em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal sizing reset-size6 size7" style="margin-right:0.10764em;">f</span><span class="mord mathcal sizing reset-size6 size7">L</span><span class="mopen sizing reset-size6 size7">(</span><span class="mord mathnormal sizing reset-size6 size7" style="margin-right:0.10764em;">f</span><span class="mclose sizing reset-size6 size7">)</span></span></span><span style="top:-4.0183em;"><span class="pstrut" style="height:3.762em;"></span><span class="mord"><span class="mrel"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.762em;"><span style="top:-2.566em;"><span class="pstrut" style="height:3.816em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.164em;"><span class="pstrut" style="height:3.816em;"></span><span style="height:1.816em;width:0.3333em;"><svg xmlns="http://www.w3.org/2000/svg" width='0.3333em' height='1.816em' style='width:0.3333em' viewBox='0 0 333.33000000000004 1816' preserveAspectRatio='xMinYMin'><path d='M145 0 H188 V1816 H145z M145 0 H188 V1816 H145z'/></svg></span></span><span style="top:-4.972em;"><span class="pstrut" style="height:3.816em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.25em;"><span></span></span></span></span></span></span></span></span><span style="top:-1.1826em;"><span class="pstrut" style="height:3.762em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="mord mathbf" style="margin-right:0.10903em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8686em;"><span style="top:-3.213em;margin-right:0.0417em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span><span class="mord mathnormal sizing reset-size6 size7">L</span><span class="mord mathbf sizing reset-size6 size7" style="margin-right:0.10903em;">f</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:4.2418em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 <div class="page-foot">
-    <!-- <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> {{ fill author }}. {{isnotpage /tag/*}}Last modified: {{ fill fd_mtime }}.{{end}} -->
-    <!-- Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. -->
+    &copy Jimmy Chen. Last modified: September 06, 2024.
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div><!-- CONTENT ENDS HERE -->
-
-      </div> <!-- closure of main -->
-    </div>   <!-- closure of class initial--content -->
-
-    <div class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-        <!-- end custom footer snippets -->
-        <div class="page__footer-follow">
-          <ul class="social-icons">
-            <li><strong>Follow:</strong></li>
-            <li><a href="https://github.com/J1MC83N" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-              <li><a href="https://instagram.com/7redchen/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-              <li><script>document.write('<a href="mailto:'+'s'+'e'+'v'+'e'+'n'+'r'+'e'+'d'+'.'+'c'+'h'+'e'+'n'+'@'+'o'+'u'+'t'+'l'+'o'+'o'+'k'+'.'+'c'+'o'+'m'+'" rel="nofollow noopener noreferrer"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> Email</a>');</script></li>
-          </ul>
-        </div>
-        <div class="page__footer-copyright">&copy; Jimmy Chen. Last modified: September 06, 2024.  Powered by <a href="https://github.com/tlienart/Franklin.jl">Franklin</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-        <div class="page-foot">
-</div>
-
-      </footer>
-    </div>
-
-    <script src="/libs/minimal-mistakes/main.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
-
     
         
 

@@ -5,6 +5,7 @@
 :root {
   --block-background: hsl(0, 0%, 94%);
   --output-background: hsl(0, 0%, 98%);
+  --smaller: 12px;
   --small: 14px;
   --normal: 19px;
   --text-color: hsv(0, 0%, 20%);
@@ -56,7 +57,7 @@ html {
 .franklin-content .page-foot a {
   text-decoration: none;
   color: #a6a2a0;
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 
 .page-foot {
@@ -65,7 +66,7 @@ html {
   color: #a6a2a0;
   text-align: center;
   margin-top: 6em;
-  /* border-top: 1px solid lightgrey; */
+  border-top: 1px solid lightgrey;
   padding-top: 2em;
   margin-bottom: 4em;
 }
@@ -240,11 +241,11 @@ td {
     IMAGES in CONTENT
 ================================================================== */
 
-.franklin-content img {
-  /* width: 70%; */
+/* .franklin-content img {
+  width: 70%;
   text-align: center;
-  /* padding-left: 10%; */
-}
+  padding-left: 10%;
+} */
 
 .franklin-content .img-small img {
   width: 50%;
