@@ -1,0 +1,191 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="/css/minimal-mistakes.css">
+<link rel="stylesheet" href="/css/adjust.css">
+<link rel="icon" href="/assets/favicon.png">
+<!--[if IE ]>
+<style>
+  /* old IE unsupported flexbox fixes */
+  .greedy-nav .site-title {
+    padding-right: 3em;
+  }
+  .greedy-nav button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+</style>
+<![endif]-->
+
+   <title>Furnace @ Home</title>  
+  <style>
+    @media (min-width: 1024px) {
+      .franklin-content {
+        width: 75%;
+        
+        padding-left: 8%;
+        padding-right: 8%;
+        
+      }
+    }
+  </style>
+  <!-- end custom head snippets -->
+</head>
+<body class="layout--single">
+  <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Jimmy Chen</a>
+        <ul class="visible-links">
+          <li class="masthead__menu-item"><a href="/projects/" >Code Projects</a></li>
+          <li class="masthead__menu-item"><a href="/stuff/" >Other Stuff</a></li>
+          <!-- <li class="masthead__menu-item"><a href="/menu2/" >More Goodies</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="/menu3/">Tags</a></li> -->
+        </ul>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="initial-content">
+    <div id="main" role="main">
+       
+
+
+<!-- Content appended here -->
+<div class="franklin-content">
+<h1 id="title"><a href="#title" class="header-anchor">Furnace @ Home</a></h1>
+<p><div class="container"><center><a href="/assets/furnace/pyramid.jpg"> <img src="/assets/furnace/pyramid-thumbnail.jpg" style="max-width:100%; cursor:pointer;" title="Click to see original"> </a></div> <span style="color:grey; font-size:smaller"><div class="container"><center>Pyramid zinc cast</div></span></p>
+<p>Zinc is a great metal.</p>
+<p>It&#39;s hefty, naturally shiny, very skin-friendly, reasonably hard, and has a melting point of 419.5˚C, below the Curie point of iron. Why is the last point important? Because it means you can build a zinc-melting furnace out of any induction cooker. </p>
+<p>A run-down of the science: an induction cooker heats up <a href="https://en.wikipedia.org/wiki/Ferromagnetism">ferromagnetic</a> metals like iron and nickel; it does so with a coil that, when powered with fast alternating current, creates current in said metals via electromagnetic induction which heats them up via the via the <a href="https://en.wikipedia.org/wiki/Skin_effect">skin effect</a>. The catch is that ferromagnetism stops working above the Curie point, which for iron is 770˚C, and so induction cookers stop working at that point as well. Thus theoretically speaking, your induction cooker can heat your iron/steel pan all the way up to red hot, but no further. Sure, a good propane burner can almost melt the same pan with a white hot flame, but personally I find induction science cooler.</p>
+<p><div class="container"><center><a href="/assets/furnace/furnaceV1.jpg"> <img src="/assets/furnace/furnaceV1-thumbnail.jpg" style="max-width:100%; cursor:pointer;" title="Click to see original"> </a></div> <span style="color:grey; font-size:smaller"><div class="container"><center>Iron rod heated to red hot by induction cooker coil ("Furnace V1")</div></span></p>
+<p>So the idea was this: take the cheapest induction cooker online, rewind the heating coil around an iron crucible as well as some generous amount of thermal insulation, and we got ourselves a homemade furnace that can melt zinc with all renewable energy, no open flame required. Simple idea really that turned out pretty fruitful; I&#39;m surprised no one on the internet has tried something similar. </p>
+<p>18-yo me was super proud of himself for coming up with that idea and was already envisioning his glorious zinc-casting career. Because, a fun fact about me, I&#39;ve always liked metallic objects, just something about the heft and durability of them that tickled some obscure part of my brain. And now instead of collecting drawers full of scrap metal parts, you&#39;re telling me I could be making shiny metal objects all I want at home? Yes please. </p>
+<h2 id="engineering_challenges"><a href="#engineering_challenges" class="header-anchor">Engineering Challenges</a></h2>
+<p>Now the keen-eyed metal-philic reader may wonder, why not melt aluminum? It melts at 660˚C, also below 770˚C, and it&#39;s a much more popular choice for metal casting hobbyists &#40;and for good reasons&#41;. The short answer would be that 660˚C is a bit too hot for my home-grown furnace to reach and sustain, also latent heat of fusion sucks. The wiser-sounding answer would be that science doth not make a working furnace, engineering does, and I&#39;m far from an engineer &#40;no software engineering doesn&#39;t count&#41;. </p>
+<p>The main engineering challenge of this &quot;induction furnace&quot; <sup id="fnref:1"><a href="#fndef:1" class="fnref">[1]</a></sup> is thermal: 1&#41; crucible needs to be hot &#40;and stay that way&#41;, 2&#41; coil needs to cool &#40;and stay that way&#41;, and 3&#41; these two things need to be close to each other &#40;and stay that way&#41;. Point 1 is straightforward, the crucible should be at and preferably above the melting point of whatever metal it holds. Point 2 stems from the fact that induction cooker coils are made from enameled copper wires &#40;specifically Litz wires&#41;, and the enamel layer breaks down at as little as 105˚C. Point 3 is because magnetic field generated by the coil drops off fast with distance to the whatever it is heating up. And the whole thing should not explode. </p>
+<p>To tackle the thermal problem, I designed my furnace as a layered bowl, hot things inside, cool things outside. From inside to outside, the layers are:</p>
+<ol>
+<li><p>Ferromagnetic crucible &#40;cast iron&#41;;</p>
+</li>
+<li><p>Thermal insulation &#40;ceramic fiber and dried mud&#41;: at 400-500˚C operating temperature, ceramic fiber is really the only option &#40;but also a huge pain to work with&#41;;</p>
+</li>
+<li><p>Structural material &#40;e.g. ceramic bowl&#41;: to support the bowl shape and hold everything above;</p>
+</li>
+<li><p>Coil wires;</p>
+</li>
+<li><p>Thermal conductor &#40;e.g. thermal paste&#41;: to suck heat away from wires and also hold/stick wires to the bowl;</p>
+</li>
+<li><p>Water cooling tubes;</p>
+</li>
+<li><p>Ferrite sticks: to contain the magnetic field and surrounding electonics &#40;including the rest of the induction cooker&#41;;</p>
+</li>
+<li><p>Hard case &#40;e.g. mica sheets&#41;: in case I accidentally spill molten zinc &#40;yes it has happened and I&#39;ve learned my lessons&#41;. </p>
+</li>
+</ol>
+<p>In fact I designed five furnaces over five years gradually converging to the above design. Some took months. Some went up in smokes. Some took months and still went up in smokes on first use &#40;I&#39;m looking at you, V4&#41;. Below recounts my journey through Furnace V1-V5.   </p>
+<h3 id="v1_not_a_furnace"><a href="#v1_not_a_furnace" class="header-anchor">V1: Not a furnace</a></h3>
+<p>V1 is what&#39;s heating the red-hot iron rod in the picture above. It&#39;s more of a demonstration of the whole idea of &quot;rewinding induction cooker coil to heat up things that are not pans,&quot; and less of a furnace. Its construction is rather straightforward: induction coil wrapped around an acrylic tube section, enclosed by four ferrite sticks and a hard cardboard case. And V1 could really only heat up iron rods. Any larger pieces of solid iron would either not fit or risk burning the acrylic. Red hot rods are cool and all, but that&#39;s not the only reason V1 exists. </p>
+<p>See I wasn&#39;t actually sure if the induction cooker electronics would like all this coil rewinding. Most commercial induction cookers have a safety/power-saving mechanism where then don&#39;t turn on the induction if an induction-compatible pan is not present; I got mine for around &#36;6 after sorting price low-to-high and even that has it. By my understanding it has something to do with the inductance of the specific setup of coil shape &#40;pancake/cylindrical/other&#41; &#43; core &#40;ferromagnatic pan/rod/crucible/nothing&#41;. A cooker can likely detect the presence of a pan by measuring inductance; but inductance changes after rewinding its coils and using something else as the core, and the cooker might explode, or worse, not turn on.</p>
+<p>Thankfully V1 worked, which showed that this cooker model seemed pretty lenient with a bit of radical repurposing. </p>
+<h3 id="v2_a_naive_furnace"><a href="#v2_a_naive_furnace" class="header-anchor">V2: a naive furnace</a></h3>
+<p>V2 was such a bad idea that I didn&#39;t bother taking a picture with it. It did however reveal the thermal problem for me. It was basically just coil winded on a ceramic cup padded with dried mud inside. The thing worked, heated up some thin iron crucible I found, but the whole construction became super hot because yeah dried mud was a terrible thermal insulator. I started looking for better insulation after V2. </p>
+<p>V2 did end up becoming somewhat useful in another unrelated project of mine. I used it to melt a cup full of hot glue, but I think some hot glue got vaporized from how hot the crucible gets.</p>
+<h3 id="v3_a_good_furnace"><a href="#v3_a_good_furnace" class="header-anchor">V3: A good furnace</a></h3>
+<p>V3 was finally working and fully supported metal casting production: it was quick to heat up to melting temperature, and did not melt itself in the process &#40;for the most part&#41;. It is with V3 that I came up with the eight-layer design:</p>
+<ul>
+<li><p>For thermal insulation, ceramic fiber was most performant and economic choice that operated at high temperatures;</p>
+</li>
+<li><p>Exposed ceramic fiber can however cause long term respiratory conditions, so I found some kiln repair dirt mixtures to seal in the ceramic fiber and which can withstand contacting the hot crucible;</p>
+</li>
+<li><p>Structure material was made from an acrylic tube that I sealed one end to create a bowl, which housed the ceramic fiber, dirt, and crucible;</p>
+</li>
+<li><p>The coil then wrapped around the acrylic tube;</p>
+</li>
+<li><p>To prevent coil damage and the acrylic from melting, I watered cooled the furnace by wrapping a polyethylene tube around the coil with thermal paste and pads sandwiched in between &#40;not the most sophisticated water cooling system but definitely the most effective without custom 3D-printed/machined parts&#41;;</p>
+</li>
+<li><p>Ferrite sticks were taped onto of the tube and also below the furance;</p>
+</li>
+<li><p>I didn&#39;t bother with an outer case for the furnace, which was proven stupid when I accidentally melted through the water tube and spilled water right above the induction cooker electronics sitting beneath &#40;thankfully the surface plate prevented any serious damage&#41;.</p>
+</li>
+</ul>
+<p>The specific sizes and shapes of everything followed from the choice of crucible which was really the limiting factor among all the components. It needs to be made from a ferromagnetic material, thick enough for effective induction, and can&#39;t be too big becuase we don&#39;t have enough heating power to melt all that much metal. For V3 I settled on a 40ml cast iron teacup, which worked wonderfully. Every other layer was tailored to the specific dimensions of the teacup. </p>
+<p>V3 worked much better than I expected given it&#39;s the first functional furnace following the eight-layer design. Before making the thing I really had no idea if I used enough ceramic fiber to keep the acrylic support from melting, or if the ad hoc water cooling could draw away enough heat. I guess making V3 was the only way to find out. </p>
+<p><div class="container"><center><a href="/assets/furnace/V3.jpg"> <img src="/assets/furnace/V3-thumbnail.jpg" style="max-width:80%; cursor:pointer;" title="Click to see original"> </a></div> <span style="color:grey; font-size:smaller"><div class="container"><center>Furnace V3 in action melting a zinc bar, with an electric pump pushing iced water through the tubes</div></span></p>
+<p><div class="container"><center><a href="/assets/furnace/casts.jpg"> <img src="/assets/furnace/casts-thumbnail.jpg" style="max-width:80%; cursor:pointer;" title="Click to see original"> </a></div> <span style="color:grey; font-size:smaller"><div class="container"><center>A variety of zinc casts made using V3</div></span></p>
+<h3 id="v4_a_failed_furnace"><a href="#v4_a_failed_furnace" class="header-anchor">V4: A failed furnace</a></h3>
+<p>While I had a lot of fun casting with V3, and 40ml of zinc &#40;which equates to about 260g&#41; was plenty for the small casts I was doing, I eventually grew ambitious. So in the summer of 2022, when I had a lot of spare time, I started working on a much larger furnace. The core was a new crucible I found, a 200ml case iron sauce pan. And the entire furnace design deviated from the eight-layer design of V3:</p>
+<p>Instead of a main structural bowl that holds the insulation and crucible, and which coil wires are wrapped around onto, the entire furnace would be a solid block of cast epoxy with the wires sealed into it. Originally I wanted to seal in water tubes as well, but that would complicate the casting setup. <s>Epoxy isn't is a terrible heat conductor either</s> I found out today that epoxy is actually terrible at heat conducting, and there are heat-resistant variants as well but I didn&#39;t use them because expensive. My idea was to use the solid chunk of epoxy as a heat sink. That was a bad idea. </p>
+<p><div class="container"><center><a href="/assets/furnace/V4-smoke.jpg"> <img src="/assets/furnace/V4-smoke-thumbnail.jpg" style="max-width:80%; cursor:pointer;" title="Click to see original"> </a></div> <span style="color:grey; font-size:smaller"><div class="container"><center>Closeup shot of furnace V4 catching on fire, after turning it on for the first time.</div></span></p>
+<p>What caused the fire was a small gap in my insulation layer that leaked high heat directly to the epoxy base, which quickly started burning. Who could&#39;ve guessed that using a combustible materal for the large majority of a metallurgical furnace was a terrible idea?</p>
+<p>Well... I couldn&#39;t. Remember that V3 used acrylic as the main structual material, which was just as combustible, and it was behind the same amount insulation as the V4. I think the reason V3 survived all these years is because 1&#41; the acrylic was thin, 2&#41; water cooling was doing its job, and 3&#41; smaller crucible which meant heating up was much faster and thus less heat exposure time overall. </p>
+<table class="fndef" id="fndef:1">
+    <tr>
+        <td class="fndef-backref"><a href="#fnref:1">[1]</a></td>
+        <td class="fndef-content">why the quotation marks? Because the term <em>induction furnace</em> is already taken and means something slightly different. Yes our furnace also melts metals with induction, but an actual induction furnace uses much higher-frequency AC to heat any conductive material to much higher temperatures without relying on the skin effect. Our furnace could technically be called a low-frequency induction furnace, but I think that title is undeserved.</td>
+    </tr>
+</table>
+
+    <script src="https://utteranc.es/client.js"
+        repo="J1MC83N/J1MC83N.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
+
+<div class="page-foot">
+    <!-- <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> {{ fill author }}. {{isnotpage /tag/*}}Last modified: {{ fill fd_mtime }}.{{end}} -->
+    <!-- Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. -->
+</div>
+</div><!-- CONTENT ENDS HERE -->
+
+      </div> <!-- closure of main -->
+    </div>   <!-- closure of class initial--content -->
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+        <!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+          <ul class="social-icons">
+            <li><strong>Follow:</strong></li>
+            <li><a href="https://github.com/J1MC83N" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+              <li><a href="https://instagram.com/7redchen/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+              <li><script>document.write('<a href="mailto:'+'s'+'e'+'v'+'e'+'n'+'r'+'e'+'d'+'.'+'c'+'h'+'e'+'n'+'@'+'o'+'u'+'t'+'l'+'o'+'o'+'k'+'.'+'c'+'o'+'m'+'" rel="nofollow noopener noreferrer"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> Email</a>');</script></li>
+          </ul>
+        </div>
+        <div class="page__footer-copyright">&copy; Jimmy Chen. Last modified: August 03, 2025.  Powered by <a href="https://github.com/tlienart/Franklin.jl">Franklin</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+        <div class="page-foot">
+</div>
+
+      </footer>
+    </div>
+
+    <script src="/libs/minimal-mistakes/main.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+
+    
+    
+  </body>
+</html>
