@@ -3,7 +3,49 @@
 
 <url>
     <loc>https://J1MC83N.github.io/stuff/furnace/index.html</loc>
-    <lastmod>2025-08-03</lastmod>
+    <lastmod>2025-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://J1MC83N.github.io/stuff/cellular-automata/index.html</loc>
+    <lastmod>2025-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://J1MC83N.github.io/projects/index.html</loc>
+    <lastmod>2025-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://J1MC83N.github.io/projects/dithering/index.html</loc>
+    <lastmod>2025-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://J1MC83N.github.io/gallery/metal-flame/index.html</loc>
+    <lastmod>2025-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://J1MC83N.github.io/projects/line-cut-3d/index.html</loc>
+    <lastmod>2025-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://J1MC83N.github.io/gallery/lorentz-vortex/index.html</loc>
+    <lastmod>2025-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://J1MC83N.github.io/gallery/berozovo-snow/index.html</loc>
+    <lastmod>2025-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -20,38 +62,26 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://J1MC83N.github.io/projects/index.html</loc>
-    <lastmod>2025-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>https://J1MC83N.github.io/projects/Lsystem/index.html</loc>
-    <lastmod>2023-03-19</lastmod>
+    <lastmod>2025-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://J1MC83N.github.io/stuff/cellular-automata/index.html</loc>
-    <lastmod>2025-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://J1MC83N.github.io/projects/dithering/index.html</loc>
-    <lastmod>2025-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://J1MC83N.github.io/projects/line-cut-3d/index.html</loc>
-    <lastmod>2023-03-19</lastmod>
+    <loc>https://J1MC83N.github.io/gallery/index.html</loc>
+    <lastmod>2025-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://J1MC83N.github.io/stuff/index.html</loc>
     <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://J1MC83N.github.io/gallery/fireworks/index.html</loc>
+    <lastmod>2025-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
