@@ -4,6 +4,6 @@ optimize(prepath="",minify=false)
 `rsync -av --delete --exclude=".git/" __site/ ../J1MC83N.github.io/` |> run
 cd("../J1MC83N.github.io")
 `git add --all` |> run
-`git commit -m "added gravity-paint"` |> run
+`git commit -m "added updated index page; changed favicon"` |> run
 `git push` |> run
 cd("../main-minimal-mistakes")
