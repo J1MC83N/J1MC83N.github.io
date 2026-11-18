@@ -15,13 +15,13 @@
 </url>
 <url>
     <loc>https://J1MC83N.github.io/projects/index.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://J1MC83N.github.io/random-words/index.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -40,6 +40,12 @@
 <url>
     <loc>https://J1MC83N.github.io/gallery/metal-flame/index.html</loc>
     <lastmod>2025-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://J1MC83N.github.io/gallery/night-leaves/index.html</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -93,7 +99,7 @@
 </url>
 <url>
     <loc>https://J1MC83N.github.io/random-words/large-language-mirrors/index.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -105,7 +111,7 @@
 </url>
 <url>
     <loc>https://J1MC83N.github.io/gallery/index.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
